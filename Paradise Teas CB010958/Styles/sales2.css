@@ -1,0 +1,151 @@
+.color{
+    background-color: #D8F192;
+}
+.main{
+    min-height:100vh;
+    width:100%;
+    background-image:url(../images/main-sales2.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sub-image{
+    min-height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(../images/teaproductsmainimg.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav{
+    background-color: white;
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+link{
+    flex:1;
+    text-align: right;
+}
+
+.links ul li{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    color:black;
+    text-decoration: none;
+    font-size:70%; 
+}
+
+.links ul li a:hover{
+    font-size: 90%;
+}
+
+.links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:grey;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.links ul li:hover::after{
+    width:100%;
+}
+
+.main-text{
+    font-size: 32px;
+    width:90%;
+    color: whitesmoke;
+    font-family: 'Water Brush', cursive;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+.page-name{
+    font-family: 'Water Brush', cursive;
+}
+
+.container{
+    padding-top: 100px;
+    color:black;
+    text-align: center;
+}
+
+.container h2{
+    color:black;
+    font-family: 'Water Brush', cursive;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.head{
+    font-size: large;
+    background-color:lightgreen;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.head h2{
+    color: black;
+    font-family: 'Water Brush', cursive;
+}
+
+
+.row-1{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.col{
+    flex-basis: 31%;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    background:whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    box-sizing:border-box;
+    transition: all .2s ease-in-out;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px whitesmoke;
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
+
+
+@media(max-width: 999px){
+    .row-1{
+        flex-direction: column;
+    }
+}
+
+.buy{
+    width:200px;
+}
+
+.logo:hover{
+    transform: scale(1.5);
+}
+
+.imgs{
+    width: 40%;
+}
