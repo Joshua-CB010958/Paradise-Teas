@@ -1,0 +1,180 @@
+.color{
+    background-color: #030718;
+}
+
+.main-image{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(../images/museum.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sub-image{
+    min-height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(../images/main2.jpeg);
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*CSS code for links*/
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+link{
+    flex:1;
+    text-align: right;
+}
+
+.links ul li{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:70%; 
+}
+
+.links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:whitesmoke;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.links ul li:hover::after{
+    width:100%;
+}
+
+.main-text{
+    font-size: 32px;
+    width:90%;
+    color: whitesmoke;
+    font-family: 'Water Brush', cursive;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+.sub-text{
+    font-size:24px;
+    width:50%;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    text-align: center;
+    color:whitesmoke;
+    top:65%;
+    left:25%;
+    transform: translateX(-50%, 50%);
+}
+/*Animation for main text when page starts*/
+div{
+    height: fit-content;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes example{
+    from {top: 90px;}
+    to {top: 50%;}
+}
+
+/*After main image*/
+
+/*About the meseum*/
+.main-title{
+    color:whitesmoke;
+    text-align: center;
+}
+.Meseum{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.col{
+    flex-basis: 31%;
+    background:#fff3f3;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition: all .2s ease-in-out;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/*Animation for content boxes*/
+.col:hover{
+    box-shadow: 0 0 20px 0px whitesmoke;
+    transform: scale(1.1); 
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*Images in second section*/
+.img-meseum{
+    width: 100%;
+}
+
+.Panel{
+    color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+}
+.Panel p{
+    color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width:60%;
+    margin:auto;
+    padding-top:100px;
+    box-sizing: border-box;
+    box-shadow: #fff;
+}
+
+.mill{
+    width: 50%;
+    text-align: center;
+}
+
+.lion{
+    display:block;
+    margin-left: 42%;
+    margin-right: 50%;
+    width:15%;
+}
